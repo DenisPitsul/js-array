@@ -16,10 +16,8 @@ const copyNumericArray = [...numericArray];
 console.log('numericArray === copyNumericArray:', numericArray === copyNumericArray);
 
 // 4
-for(let i = 0; i < numericArray.length; i++) {
-    if(i % 2 === 0) {
-        console.log(i, ':', numericArray[i]);
-    }
+for(let i = 0; i < numericArray.length; i+=2) {
+    console.log(i, ':', numericArray[i]);
 }
 
 // 5
